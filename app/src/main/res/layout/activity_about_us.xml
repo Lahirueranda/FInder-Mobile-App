@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/aboutus"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:orientation="vertical"
+        tools:context=".AboutUs">
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textColor="#1e75ff"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/aboutImage"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/aboutTitle"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/garage_logo" />
+
+        <TextView
+            android:id="@+id/welCome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Welcome to Garagefinder !"
+            android:gravity="center"
+            android:layout_below="@+id/aboutImage"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/privacyPolicyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/welCome"
+            android:text="
+           We are the garage finder, we provide location-based garage services for our users. using our app users can find the nearest garage based on the user's current location also we are providing those garage service details, open days, open times and any other garage related details as well as we are include many options for users.\n\n
+           In this app we provide many functions for garages so, they can register in our app and they can provide their service details through the cyber world as well as we include many options for users. \n"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/garageNameLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="How To Use Garagefinder?"
+            android:layout_below="@+id/privacyPolicyText"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <FrameLayout
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="640dp">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/aboutCopy"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_below="@id/video"
+            android:text="2023 ⓒ GarageFinder 1.0.0 \n by Lahiru Eranda"
+            android:textColor="#1e75ff"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

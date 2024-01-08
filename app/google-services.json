@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "814599242071",
+    "project_id": "garagefinder-61ab6",
+    "storage_bucket": "garagefinder-61ab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814599242071:android:b17f4e174d5c7176893e12",
+        "android_client_info": {
+          "package_name": "com.example.garagefinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814599242071-lghnmtiodo1bm4vq0pv6ufppkmf6q052.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtW4DRCCsdtXXzQllvDS_wupJhRzHy2Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814599242071-lghnmtiodo1bm4vq0pv6ufppkmf6q052.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

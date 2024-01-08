@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/aboutus"
+    android:orientation="vertical"
+    tools:context=".PrivacyPolicy">
+
+    <TextView
+        android:id="@+id/aboutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Privacy Policies"
+        android:textStyle="bold"
+        android:textColor="#1e75ff"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/aboutImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/aboutTitle"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        card_view:srcCompat="@drawable/garage_logo" />
+
+    <TextView
+        android:id="@+id/welCome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Garagefinder !"
+        android:layout_below="@+id/aboutImage"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/privacyPolicyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/welCome"
+
+        android:text="
+           We collect and store location data to provide you with the service of finding nearby locations. We may also use this data for analytical purposes to improve our service. \n\n
+           We may collect personal information such as your name, email address, and phone number for providing services. \n\n
+           We may share your location data with third-party service providers that assist us in providing our service. \n\n
+           We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure. Therefore, we cannot guarantee absolute security of your information.\n"
+
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/aboutCopy"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@id/privacyPolicyText"
+        android:text="2023 ⓒ GarageFinder \n by Lahiru Eranda"
+        android:textColor="#1e75ff"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

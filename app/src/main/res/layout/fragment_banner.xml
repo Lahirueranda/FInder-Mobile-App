@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BannerFragment">
+
+
+        <TextView
+            android:id="@+id/bannerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Provide Garage details"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/garageUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Username"
+            android:layout_below="@+id/bannerTitle"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:id="@+id/garageUserNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garageUserName"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/bannertext"
+            android:drawablePadding="20dp"
+            android:drawableTint="#8c8c8c"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingTop="17dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="You can't change your username."
+            android:layout_below="@+id/garageUserNameInput"
+            android:textColor="#ff3333"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/garageNameLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Garage name"
+            android:layout_below="@+id/garageUserNameInput"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/garageNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garageNameLable"
+            android:inputType="text"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:drawableTint="#8c8c8c"
+            android:drawablePadding="20dp"
+            android:hint="Provide Your Correct Garage Name"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="17dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:background="@drawable/shapes"/>
+
+
+        <TextView
+            android:id="@+id/garageContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Garage Contact Number"
+            android:textColor="@color/black"
+            android:layout_below="@+id/garageNameInput"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/garageContactInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garageContactNumber"
+            android:inputType="number"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:drawableTint="#8c8c8c"
+            android:drawablePadding="20dp"
+            android:hint="Provide Your Contact Number"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="17dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:background="@drawable/shapes"/>
+
+
+
+        <TextView
+            android:id="@+id/garageOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Garage Open Date/Time"
+            android:textColor="@color/black"
+            android:layout_below="@+id/garageContactInput"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/garageDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garageOpen"
+            android:height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:hint="Provide Open Date and Time Correct format \nEX - Monday 8.00 Am to 5.00 Pm,"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:background="@drawable/shapes"/>
+
+
+        <TextView
+            android:id="@+id/garageService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Garage Services"
+            android:textColor="@color/black"
+            android:layout_below="@+id/garageDateInput"
+            android:textSize="15dp"/>
+
+
+        <EditText
+            android:id="@+id/garageServiceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/garageService"
+            android:height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:hint="Provide Garage Services in correct format \nEX - Vehicle Repaire,"
+            android:textSize="15dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:background="@drawable/shapes"/>
+
+        <TextView
+            android:id="@+id/garageLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Garage Location"
+            android:textColor="@color/black"
+            android:layout_below="@+id/garageServiceInput"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/garageLocation"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/shapes"
+            android:drawablePadding="20dp"
+            android:drawableTint="#8c8c8c"
+            android:hint="latitude"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/shapes"
+            android:layout_below="@+id/garageLocation"
+            android:drawablePadding="20dp"
+            android:drawableTint="#8c8c8c"
+            android:hint="longitude"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8c8c8c"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGet"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/gradentbutton"
+            android:backgroundTint="#39423A"
+            android:text="Get"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_below="@+id/garageLocation"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddToDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/gradentbutton"
+            android:text="Publish banner"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_below="@+id/longitude"/>
+
+        <TextView
+            android:id="@+id/orLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="----------- or -----------"
+            android:layout_below="@+id/btnAddToDetails"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEdit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/gradentbutton"
+            android:backgroundTint="#16A61C"
+            android:text="Save changers"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_below="@+id/orLable"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/gradentbutton"
+            android:backgroundTint="#ff0000"
+            android:text="Delete banner"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_below="@+id/orLable"/>
+
+    </RelativeLayout>
+
+</ScrollView>

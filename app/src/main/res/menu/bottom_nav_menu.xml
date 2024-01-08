@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/garageMap"
+        android:title="Map"
+        android:icon="@drawable/baseline_map_24"/>
+
+    <item android:id="@+id/banner"
+        android:title="Banner"
+        android:icon="@drawable/baseline_add_box_24"/>
+
+    <item android:id="@+id/setting"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"/>
+
+</menu>

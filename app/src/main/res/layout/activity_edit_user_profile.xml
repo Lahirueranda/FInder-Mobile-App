@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerpagebackground"
+    tools:context=".EditUserProfile">
+
+
+    <TextView
+        android:id="@+id/editUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="235dp"
+        android:text="Edit User Profile"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/editUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUserProfile"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:background="@drawable/editshape"
+        android:drawablePadding="20dp"
+        android:drawableTint="#8c8c8c"
+        android:hint="Username"
+        android:textSize="17dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="17dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="11dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8c8c8c" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:text="You can't edit your username."
+        android:layout_below="@+id/editUserName"
+        android:textColor="#ff3333"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUserName"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableTint="#8c8c8c"
+        android:drawablePadding="20dp"
+        android:hint="Email Address"
+        android:paddingLeft="2dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8c8c8c" />
+
+    <EditText
+        android:id="@+id/editMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:inputType="number"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="35dp"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawableTint="#8c8c8c"
+        android:drawablePadding="20dp"
+        android:hint="Mobile Number"
+        android:paddingLeft="2dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="5dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8c8c8c" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMobileNumber"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="35dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:longClickable="false"
+        android:drawableTint="#8c8c8c"
+        android:drawablePadding="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="2dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#8c8c8c" />
+
+    <ImageView
+        android:id="@+id/showPassword"
+        android:layout_width="22dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/editMobileNumber"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="300dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/gradentbutton"
+        android:text="Save changers"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_below="@+id/editPassword"/>
+
+</RelativeLayout>
